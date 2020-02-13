@@ -41,6 +41,8 @@ public class AnimalHabits {
 		for (String str : picture_dog) {
 			System.out.println(str);
 		}
+		
+		System.out.println("End of work");
 	}
 	
 }
