@@ -2,9 +2,6 @@ import java.util.ArrayList;
 
 public class Animal {
 	
-	private String food = null;
-	private String hunger = null;
-	
 	public String makeNoice() {
 		return "*some animal voice*";
 	}
@@ -20,4 +17,5 @@ public class Animal {
 	public String roam() {
 		return "*some animal roaming*";
 	}
+	
 }
