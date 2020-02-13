@@ -1,5 +1,5 @@
 
-public class Cat extends Animals {
+public class Cat extends Animal {
 	
 	private String[] picture = {
 "___o8o_____________________oo",
