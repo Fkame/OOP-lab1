@@ -17,6 +17,12 @@ public class AnimalHabits {
 		fido.setHunger(AnimalStatuses.HungerLevels.MID);
 		System.out.println(fido.eat());
 		
+		System.out.println("\nPicture of Dog:");
+		String[] picture = fido.getPicture();
+		for (String str : picture) {
+			System.out.println(str);
+		}
+		
 	}
 	
 }
