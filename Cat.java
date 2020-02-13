@@ -64,4 +64,9 @@ public class Cat extends Animal {
 	public String[] getPicture () {
 		return this.picture;
 	}
+	
+	public void feed() {
+		if (hunger == AnimalStatuses.HungerLevels.LOW) hunger = AnimalStatuses.HungerLevels.MID;
+		if (hunger == AnimalStatuses.HungerLevels.MID) hunger = AnimalStatuses.HungerLevels.HIGH;
+	}
 }

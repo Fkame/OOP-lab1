@@ -95,8 +95,19 @@ public class Dog extends Animal {
 		if (hungerLvL == AnimalStatuses.HungerLevels.HIGH) hunger = AnimalStatuses.HungerLevels.HIGH;
 	}
 	
-	public String[] getPicture () {
+	public String[] getPictureSitting () {
 		return this.picture_sitting;
+	}
+	
+	public String[] getPictureRoaming () {
+		return this.picture_roaming;
+	}
+	
+	
+	
+	public void feed() {
+		if (hunger == AnimalStatuses.HungerLevels.LOW) hunger = AnimalStatuses.HungerLevels.MID;
+		if (hunger == AnimalStatuses.HungerLevels.MID) hunger = AnimalStatuses.HungerLevels.HIGH;
 	}
 
 	

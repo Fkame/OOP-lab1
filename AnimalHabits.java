@@ -37,7 +37,7 @@ public class AnimalHabits {
 		System.out.println(fido.eat());
 		
 		System.out.println("\nPicture of Dog:");
-		String[] picture_dog = fido.getPicture();
+		String[] picture_dog = fido.getPictureSitting();
 		for (String str : picture_dog) {
 			System.out.println(str);
 		}
