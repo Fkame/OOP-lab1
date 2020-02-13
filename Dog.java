@@ -1,6 +1,6 @@
 public class Dog extends Animal {
 	
-	private String[] picture = {
+	private String[] picture_sitting = {
 "____________________DDDDDDDDDDD",
 "__________________DDDD_____DDDDDDD",
 "_________________DD_____________DDD",
@@ -30,6 +30,35 @@ public class Dog extends Animal {
 "______________DD_DDDDDD___DDDDDDDD",
 "_______________DDDDDD______DDDDD"
 };
+
+	private String[] picture_roaming = {
+"_______DDDDDDDDD",
+"_____DDD__DDDDDD",
+"___DD____DD______________DDDDDD",
+"___D___DD_____________DDDD_DDDDDDDDDD",
+"__DD___DDDDDDDD______DD___DD_______DDDDDD",
+"__DD_DDDD_____DDDDDDD______D_________DD_DD",
+"___DDD____________DD_______DD_________D__D",
+"__DD_____________DD_________D_________DD_DD",
+"_DD______________DD_________D__________D_DD",
+"_D_________________DDDD____DD_DD____DDDD__D",
+"_D_________________DDDDDDDDD__D0D__D0D_D_DD",
+"_D________________DDDD___DD_________DD__DD",
+"_DD________________D_DD____________D_DD",
+"_D_________________DD_DDDDDD_D_____DDDD",
+"D________D__________DDDDD_DDDD_____DDD",
+"D______DDDDD___________DDDDDDDDDDDDDD",
+"D_____DD_D_DDD_____________D__DDD___DD",
+"D_____D__DD__DDD______DDD_D___DDDD_DDDDD",
+"D______D__DD___D______D_DDD____D_DDDDDDDD",
+"DD__DDDD___DDDDDD_____DD_D_D____DDDDDDDDDD",
+"_DDDDDDD______DDD______DDD__D_____DDDDDDDD",
+"_________________D_____DD__DDD_______D__DD",
+"_________________DD_____DDD_DDD_________DD",
+"__________________DD______DD_DDDDD_____DD",
+"___________________DDDD_DDD_____DDDDDDD",
+"_____________________DDDDD"
+};
 	
 	private AnimalStatuses.FoodTypes food = AnimalStatuses.FoodTypes.MEAT;
 	private AnimalStatuses.HungerLevels hunger = AnimalStatuses.HungerLevels.LOW;
@@ -50,6 +79,7 @@ public class Dog extends Animal {
 		return "ooops, your dog is broked(((";
 	}
 	
+
 	public String sleep() {
 		return "*lie down next to the owner*";
 	}
