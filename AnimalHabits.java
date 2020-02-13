@@ -5,20 +5,20 @@ public class AnimalHabits {
 		System.out.println("Greeting in low-cost animal-habits text simulation prog!");
 		System.out.println("--------------------------------------------------------\n");
 		
-		//Вызов собаки
-		Dog fido = new Dog();
-		System.out.println("Hi, i am Dog - Fido, now i will demonstate you my habits...");
-		System.out.println(fido.makeNoice());
-		System.out.println(fido.eat());
-		System.out.println(fido.roam());
-		System.out.println(fido.sleep());
+		//Вызов кошака
+		Cat booris = new Cat();
+		System.out.println("Hi, i am Cat - Booris and now you are my own slave");
+		System.out.println(booris.makeNoice());
+		System.out.println(booris.eat());
+		System.out.println(booris.roam());
+		System.out.println(booris.sleep());
 		System.out.println("");
 		
-		fido.setHunger(AnimalStatuses.HungerLevels.MID);
-		System.out.println(fido.eat());
+		booris.setHunger(AnimalStatuses.HungerLevels.MID);
+		System.out.println(booris.eat());
 		
-		System.out.println("\nPicture of Dog:");
-		String[] picture = fido.getPicture();
+		System.out.println("\nPicture of Cat:");
+		String[] picture = booris.getPicture();
 		for (String str : picture) {
 			System.out.println(str);
 		}

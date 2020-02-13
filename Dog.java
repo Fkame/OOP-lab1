@@ -96,7 +96,7 @@ public class Dog extends Animal {
 	}
 	
 	public String[] getPicture () {
-		return this.picture;
+		return this.picture_sitting;
 	}
 
 	
