@@ -61,7 +61,7 @@ public class Dog extends Animal {
 };
 	
 	private AnimalStatuses.FoodTypes food = AnimalStatuses.FoodTypes.MEAT;
-	private AnimalStatuses.HungerLevels hunger = AnimalStatuses.HungerLevels.LOW;
+	private AnimalStatuses.HungerLevels hunger = AnimalStatuses.HungerLevels.HIGH;
 	
 	private int[] location = new int[2];
 	
@@ -95,15 +95,13 @@ public class Dog extends Animal {
 		if (hungerLvL == AnimalStatuses.HungerLevels.HIGH) hunger = AnimalStatuses.HungerLevels.HIGH;
 	}
 	
-	public String[] getPictureSitting () {
+	public String[] getPicture_normal () {
 		return this.picture_sitting;
 	}
 	
-	public String[] getPictureRoaming () {
+	public String[] getPicture_roaming () {
 		return this.picture_roaming;
 	}
-	
-	
 	
 	public void feed() {
 		if (hunger == AnimalStatuses.HungerLevels.LOW) hunger = AnimalStatuses.HungerLevels.MID;

@@ -18,4 +18,14 @@ public class Animal {
 		return "*some animal roaming*";
 	}
 	
+	public String[] getPicture_normal () {
+		String[] str = {"n", "u", "l"};
+		return str;
+	}
+	
+	public String[] getPicture_roaming () {
+		String[] str = {"n", "u", "l"};
+		return str;
+	}
+	
 }
